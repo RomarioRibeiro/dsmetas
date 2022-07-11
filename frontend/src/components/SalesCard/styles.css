@@ -1,0 +1,99 @@
+.dsmetas-card {
+    background: #283142;
+    border-radius: 10px;
+    padding: 30px 10px
+}
+
+.dsmetas-sales-title {
+    color: #676FFF;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.dsmeta-sales-control-container {
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+.dsmetas-sales-control {
+    background-color: #1B2531;
+    width: 100%;
+    border-radius: 5px;
+    color: #9AAABE;
+    height: 46px;
+    padding: 0 21px;
+    border: 1px solid #384459;
+    font-size: 18px;
+
+}
+
+.dsmetas-sales-table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.dsmetas-sales-table thead {
+    font-size: 16px;
+    width: 100%;
+    font-weight: 700;
+    color: #E9E9E9;
+}
+
+.dsmetas-sales-table tbody {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CFCFCF;
+    text-align: center;
+}
+
+.dsmetas-sales-table tbody tr {
+    height: 74px;
+    border-top: 1px solid #5F6E82;
+}
+
+
+.dsmetas-sales-table tbody tr:hover>td {
+    background-color: #384459;
+}
+
+.dsmetas-sales-table tbody tr:nth-child(odd) {
+    background-color: #242C3B;
+}
+
+.dsmetas-red-container {
+    display: flex;
+    justify-content: center;
+}
+
+.Show576 {
+    display: none;
+}
+
+.Show992 {
+    display: none;
+}
+
+@media(min-width: 576px) {
+    .Show576 {
+        display: table-cell;
+    }
+
+    .dsmetas-card {
+        padding: 35px;
+    }
+
+    .dsmetas-sales-table tbody tr {
+        height: 55px;
+    }
+
+    .dsmetas-sales-table tbody {
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 992px) {
+    .Show992 {
+        display: table-cell;
+    }
+}
