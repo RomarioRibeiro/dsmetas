@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { toast } from 'react-toastify';
 import icon from '../../assents/img/notification-icon.svg';
 import { BASE_URL } from '../../utis/request';
 
@@ -8,7 +9,7 @@ import './styles.css';
 function handleClink(id :number) {
   axios(`${BASE_URL}/sales/${id}/notification`)
     .then(response => {
-      console.log("SUCESSO")
+    toast.info("SMS ENVIADA COM SUCESSO")
     })
 }
 
